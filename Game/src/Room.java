@@ -6,7 +6,7 @@ public class Room {
     private Room east;
     private Room south;
     private Room west;
-    private String name;
+    String name;
     
     // Constructor 
     public Room(String name) {
@@ -22,22 +22,22 @@ public class Room {
     }
 
     public Room getNorth () {
-        System.out.println("North of Room " + this.name + " is " + this.north.name);
+        // System.out.println("North of Room " + this.name + " is " + this.north.name);
         return this.north;
     }
 
     public Room getEast () {
-        System.out.println("East of Room " + this.name + " is " + this.east.name);
+        // System.out.println("East of Room " + this.name + " is " + this.east.name);
         return this.east;
     }
 
     public Room getSouth () {
-        System.out.println("South of Room " + this.name + " is " + this.south.name);
+        // System.out.println("South of Room " + this.name + " is " + this.south.name);
         return this.south;
     }
 
     public Room getWest () {
-        System.out.println("West of Room " + this.name + " is " + this.west.name);
+        // System.out.println("West of Room " + this.name + " is " + this.west.name);
         return this.west;
     }
 

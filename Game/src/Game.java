@@ -1,17 +1,27 @@
-
+import java.util.Scanner;
 
 public class Game {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("Do something");
 
-        GameMap.map();
-        
-        //TODO Navigation Actions
+        GameMap myMap = new GameMap();
 
-        //TODO Other Actions 
+        Scanner myObj = new Scanner(System.in);
 
-        //TODO Input from user 
+        while (true) {
+            System.out.print("What it do baby boo: "); // Input from user
+            String direction = myObj.nextLine();
 
-        //TODO Call different actions 
+            myMap.userDirection(direction);
+
+        }
+
+        // TODO Navigation Actions
+
+        // TODO Other Actions
+
+        // TODO Input from user
+
+        // TODO Call different actions
     }
 }
